@@ -1,6 +1,6 @@
 import pyspark.sql.functions as F
 
-def get_tags_summary(TAGS,TABLE, START_TIME, END_TIME):
+def get_tags_summary(TAGS,TABLE, START_TIME, END_TIME, spark):
 
     df = spark.table(TABLE)
 
